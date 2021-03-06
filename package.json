@@ -1,0 +1,45 @@
+{
+  "name": "pupeteer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node --files src/main.ts",
+    "lint:eslint": "eslint src/**/*.ts --fix",
+    "lint:prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "chrome-launcher": "^0.13.4",
+    "dotenv": "^8.2.0",
+    "hot-shots": "^8.3.0",
+    "lighthouse": "^7.2.0",
+    "node-fetch": "^2.6.1",
+    "playwright": "^1.9.1",
+    "puppeteer": "^8.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.2.6",
+    "@types/node-fetch": "^2.5.8",
+    "@types/prettier": "^2.2.2",
+    "@types/puppeteer": "^5.4.3",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "husky": "4",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}

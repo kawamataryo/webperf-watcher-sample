@@ -1,0 +1,22 @@
+# name: Measure webperf
+
+# on:
+#   schedule:
+#     - cron:  '0 */1 * * *'
+
+# jobs:
+#   measure-webperf:
+#     runs-on: ubuntu-18.04
+#     timeout-minutes: 10
+#     steps:
+#       - uses: actions/checkout@v1
+
+#       - name: Install packages.
+#         run: yarn install
+
+#       - name: Measure webperf.
+#         run: yarn start
+#         env:
+#           LOGIN_ID: ${{ secrets.LOGIN_URL }}
+#           LOGIN_PASS: ${{ secrets.LOGIN_PASS }}
+#           DD_API_KEY: ${{ secrets.DD_API_KEY }}
