@@ -12,7 +12,7 @@
     "dotenv": "^8.2.0",
     "hot-shots": "^8.3.0",
     "lighthouse": "^7.2.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "playwright": "^1.9.1",
     "puppeteer": "^8.0.0",
     "ts-node": "^9.1.1",
